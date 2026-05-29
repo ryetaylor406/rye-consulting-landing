@@ -93,4 +93,19 @@ function openModal(id){document.getElementById(id).classList.add('active');docum
 function closeModal(id){document.getElementById(id).classList.remove('active');document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){['modal-diagnostic','modal-jumpstart','modal-partner'].forEach(closeModal);}});
 </script>
+
+<!-- Consolto Floating Widget -->
+<script>
+window.addEventListener('load', function () {
+  var el = document.createElement('script');
+  el.setAttribute('src', 'https://client.consolto.com/iframeApp/iframeApp.js');
+  el.id = 'et-iframe';
+  el.async = true;
+  el.setAttribute('data-widgetId', '6137e6b0c0265939c57dbb1e');
+  el.setAttribute('data-version', 0.5);
+  el.setAttribute('data-test', false);
+  document.body.appendChild(el);
+});
+</script>
+
 </body></html>
